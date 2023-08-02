@@ -40,3 +40,80 @@
 `DATABASE_URI=
 ACCESS_TOKEN_SECRET=
 REFRESH_TOKEN_SECRET=`
+
+# Twitter Clone Backend
+
+**Prerequisites:**
+- Node.js installed (version 16.0.0 or later)
+- MongoDB database (local or remote) with connection details
+
+**Installation:**
+1. Clone this repository to your local machine.
+2. Open a terminal or command prompt and navigate to the backend-1 directory.
+
+**Configuration:**
+1. Create a file named `.env` in the root directory of the project.
+2. Inside the `.env` file, set the following environment variables:
+
+```
+MONGODB_URI=your_mongodb_connection_string # Replace with your MongoDB connection string.
+JWT_SECRET=your_secret_key # Replace with a secret key for JWT token encryption.
+```
+
+**Installing Dependencies:**
+Run the following command to install the required dependencies:
+
+```
+npm install
+```
+
+**Running the Server:**
+There are two ways to run the server: (by default it is using 5001)
+
+1. **Production Mode:**
+   To run the server in production mode, use the following command:
+
+   ```
+   npm start
+   ```
+
+2. **Development Mode:**
+   To run the server in development mode with automatic restarts on code changes, use the following command:
+
+   ```
+   npm run server
+   ```
+# Twitter Clone Frontend
+
+
+**Prerequisites:**
+- Node.js installed (version 16.0.0 or later)
+- Twitter Clone Backend server running and accessible at a specific URL (update the server URL in the application if required)
+
+**Installation:**
+1. Clone this repository to your local machine.
+2. Open a terminal or command prompt and navigate to the frontend directory.
+
+**Installing Dependencies:**
+Run the following command to install the required dependencies:
+
+```
+npm install
+```
+
+**Running the Development Server:**
+To run the frontend application in development mode, use the following command:
+
+```
+npm start
+```
+
+This will start the development server, and the application will be accessible at `http://localhost:3000` (or another port if 3000 is occupied).
+
+**Building the Production Version:**
+To create a production-ready build of the frontend application, use the following command:
+
+```
+npm run build
+```
+
